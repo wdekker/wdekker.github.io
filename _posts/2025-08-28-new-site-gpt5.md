@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "A New Beginning: Redesigning My Personal Site with GPT-5"
