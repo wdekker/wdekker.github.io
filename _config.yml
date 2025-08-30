@@ -1,4 +1,24 @@
-title: Dekker.Dev
-description: Software Craftsmanship - Architecture - Consultancy - Training
-theme: jekyll-theme-hacker
-google_analytics: UA-140496359-1
+
+title: "Willem Dekker"
+description: "Architect, Engineer & Innovator — connecting business and technology."
+url: "https://dekker.dev"
+baseurl: ""
+timezone: "Europe/Amsterdam"
+
+social:
+  github: "wdekker"
+  linkedin: "willem-dekker" # update if needed
+
+# Google Analytics — replace this placeholder with your ID (e.g., G-XXXXXXXXXX or UA-XXXXXXXXX-X)
+google_analytics: "UA-XXXXXXX-X"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build settings
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+permalink: /blog/:year/:month/:day/:title/
