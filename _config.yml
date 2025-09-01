@@ -1,3 +1,4 @@
+
 title: "Willem Dekker"
 description: "Architect, Engineer & Innovator — connecting business and technology."
 url: "https://dekker.dev"
@@ -6,16 +7,20 @@ timezone: "Europe/Amsterdam"
 
 social:
   github: "wdekker"
-  linkedin: "willemjdekker" # update if needed
+  linkedin: "willem-dekker"
 
-# Google Analytics — replace this placeholder with your ID (e.g., G-XXXXXXXXXX or UA-XXXXXXXXX-X)
+# Google Analytics placeholder (replace with your ID)
 google_analytics: "UA-XXXXXXX-X"
 
 markdown: kramdown
 kramdown:
   input: GFM
 
-# Build settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
 exclude:
   - README.md
   - Gemfile
