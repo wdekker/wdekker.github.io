@@ -1,0 +1,128 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "jobTitle": "Business Architect Innovation",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Rabobank"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Computer Science Program"
+  },
+  "sameAs": [
+    "https://github.com/{{ site.social.github }}",
+    "https://www.linkedin.com/in/{{ site.social.linkedin }}/"
+  ],
+  "knowsAbout": [
+    "Software Architecture",
+    "Platform Engineering",
+    "Developer Experience",
+    "Innovation",
+    "Business Architecture",
+    "Cloud Computing",
+    "Agile Methodologies"
+  ],
+  "image": "{{ site.url }}/assets/img/profile.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NL"
+  }
+}
+</script>
+
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "image": "{{ site.url }}/assets/img/profile.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/profile.jpg"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+{% endif %}
+
+{% if page.title == 'Resume' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.title }}",
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Business Architect Innovation",
+      "occupationLocation": {
+        "@type": "Place",
+        "name": "Netherlands"
+      },
+      "skills": [
+        "Platform Engineering",
+        "Developer Experience",
+        "Innovation",
+        "GenAI",
+        "Cloud Architecture",
+        "Agile Leadership"
+      ]
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Rabobank",
+    "url": "https://www.rabobank.com"
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Computer Science (Cum Laude)",
+      "dateEarned": "2010"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Team Leadership",
+      "credentialCategory": "Professional Certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "RSM"
+      },
+      "dateEarned": "2025"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Certified Scrum Master",
+      "credentialCategory": "Professional Certification",
+      "recognizedBy": {
+        "@type": "Person",
+        "name": "Jeff Sutherland"
+      },
+      "dateEarned": "2009"
+    }
+  ]
+}
+</script>
+{% endif %}

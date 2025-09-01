@@ -1,4 +1,3 @@
-
 title: "Willem Dekker"
 description: "Architect, Engineer & Innovator — connecting business and technology."
 url: "https://dekker.dev"
@@ -9,8 +8,8 @@ social:
   github: "wdekker"
   linkedin: "willem-dekker"
 
-# Google Analytics placeholder (replace with your ID)
-google_analytics: "UA-XXXXXXX-X"
+# Google Analytics placeholder (replace with your actual GA4 ID)
+google_analytics: "G-XXXXXXXXXX"
 
 markdown: kramdown
 kramdown:
