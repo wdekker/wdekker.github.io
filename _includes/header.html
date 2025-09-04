@@ -1,7 +1,20 @@
 <header class="site-header">
     <div class="container nav">
         <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <nav>
+
+        <!-- Mobile menu toggle -->
+        <button
+            class="menu-toggle"
+            onclick="toggleMobileMenu()"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="mobile-nav">
             <a href="{{ '/' | relative_url }}">Home</a>
             <a href="{{ '/resume' | relative_url }}">Resume</a>
             <a href="{{ '/blog/' | relative_url }}">Blog</a>
@@ -13,4 +26,6 @@
             >
         </nav>
     </div>
+
+    <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
 </header>

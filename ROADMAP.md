@@ -25,7 +25,7 @@ This document tracks planned improvements and enhancements for dekker.dev.
   - [ ] "Golden Paths: Reducing Cognitive Load for Developers"
 
 ### Medium Priority
-- [ ] Add mobile menu toggle JavaScript functionality
+- [x] Add mobile menu toggle JavaScript functionality
 - [ ] Test and fix any mobile navigation issues
 - [ ] Optimize images (compress profile.jpg, add proper alt tags)
 

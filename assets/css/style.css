@@ -111,13 +111,34 @@ body {
     flex-direction: column;
     cursor: pointer;
     padding: var(--space-2);
+    background: none;
+    border: none;
+    border-radius: 4px;
+    z-index: 20;
 }
+
+.menu-toggle:hover {
+    background: color-mix(in srgb, var(--text) 10%, transparent);
+}
+
 .menu-toggle span {
     width: 25px;
     height: 3px;
     background: var(--text);
     margin: 3px 0;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Hamburger animation */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .site-header nav {
@@ -342,19 +363,39 @@ pre {
         background: var(--card);
         border: 1px solid var(--border);
         border-top: none;
+        border-radius: 0 0 12px 12px;
         flex-direction: column;
         padding: var(--space-4);
         box-shadow: var(--shadow);
+        z-index: 10;
+        animation: slideDown 0.3s ease-out;
     }
 
     .site-header nav.active {
         display: flex;
     }
 
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     .site-header nav a {
         margin: var(--space-2) 0;
         margin-left: 0;
-        padding: var(--space-2);
+        padding: var(--space-3);
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+    }
+
+    .site-header nav a:hover {
+        background: color-mix(in srgb, var(--accent) 10%, transparent);
     }
 
     .hero {
