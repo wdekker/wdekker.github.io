@@ -407,3 +407,216 @@ pre {
         font-size: var(--text-xl);
     }
 }
+
+/* Talk-specific styles */
+.talk-item {
+    margin-bottom: var(--space-6);
+}
+
+.talk-item h3 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xl);
+    color: var(--text);
+}
+
+.talk-meta {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--muted);
+}
+
+.talk-date {
+    font-weight: 600;
+}
+
+.talk-venue::before {
+    content: "📍 ";
+}
+
+.talk-collab::before {
+    content: "👥 ";
+}
+
+.talk-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: var(--space-3) 0;
+}
+
+.topic {
+    padding: var(--space-1) var(--space-3);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    color: var(--accent);
+    border-radius: 20px;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.talk-links {
+    margin-top: var(--space-4);
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+.topic-area {
+    padding: var(--space-4);
+    background: color-mix(in srgb, var(--card) 50%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.topic-area h4 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-lg);
+    color: var(--text);
+}
+
+.topic-area ul {
+    margin: 0;
+    padding-left: var(--space-4);
+}
+
+.topic-area li {
+    margin-bottom: var(--space-1);
+    color: var(--muted);
+}
+
+.speaking-cta {
+    text-align: center;
+    padding: var(--space-6) 0;
+}
+
+.speaking-note {
+    margin-top: var(--space-3);
+    font-style: italic;
+    color: var(--muted);
+    font-size: var(--text-sm);
+}
+
+/* Contact page styles */
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin: var(--space-6) 0;
+}
+
+.contact-item {
+    padding: var(--space-4);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--card) 50%, transparent);
+}
+
+.contact-item h4 {
+    margin: 0 0 var(--space-2);
+    color: var(--text);
+    font-size: var(--text-lg);
+}
+
+.contact-item p {
+    margin: 0 0 var(--space-3);
+    color: var(--muted);
+    font-size: var(--text-sm);
+}
+
+/* Blog page styles */
+.rss-link {
+    float: right;
+    font-size: var(--text-sm);
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: var(--space-4);
+}
+
+.rss-link:hover {
+    color: var(--link);
+}
+
+.post-list {
+    margin-top: var(--space-6);
+}
+
+.post-preview {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-preview:last-child {
+    border-bottom: none;
+}
+
+.post-preview h3 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.post-preview h3 a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.post-preview h3 a:hover {
+    color: var(--link);
+}
+
+.post-preview .post-meta {
+    margin-bottom: var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--muted);
+}
+
+.post-excerpt {
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--space-8) 0;
+    color: var(--muted);
+}
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+    .talk-meta {
+        flex-direction: column;
+        gap: var(--space-1);
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .talk-topics {
+        margin: var(--space-2) 0;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .rss-link {
+        float: none;
+        display: block;
+        margin-top: var(--space-2);
+        margin-left: 0;
+    }
+
+    .post-preview h3 {
+        font-size: var(--text-lg);
+    }
+}

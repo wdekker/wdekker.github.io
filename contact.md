@@ -64,37 +64,3 @@ title: Contact
   </div>
 </section>
 
-<style>
-.contact-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-6);
-  margin: var(--space-6) 0;
-}
-
-.contact-item {
-  padding: var(--space-4);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--card) 50%, transparent);
-}
-
-.contact-item h4 {
-  margin: 0 0 var(--space-2);
-  color: var(--text);
-  font-size: var(--text-lg);
-}
-
-.contact-item p {
-  margin: 0 0 var(--space-3);
-  color: var(--muted);
-  font-size: var(--text-sm);
-}
-
-@media (max-width: 768px) {
-  .contact-methods {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
-  }
-}
-</style>
