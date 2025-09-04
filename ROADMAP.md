@@ -18,7 +18,7 @@ This document tracks planned improvements and enhancements for dekker.dev.
 ## 🚀 Immediate Actions (1-2 days)
 
 ### High Priority
-- [ ] Replace Google Analytics placeholder with actual GA4 tracking ID
+- [x] Replace Google Analytics with GoatCounter (free alternative)
 - [ ] Write 2-3 new blog posts:
   - [ ] "Platform Engineering at Scale: Lessons from 8,000+ Engineers"
   - [ ] "Innovation in Banking: Navigating Regulatory Constraints"

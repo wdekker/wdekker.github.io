@@ -52,12 +52,12 @@ title: Resume
 
     <h3>Education & Certifications</h3>
     <p>
-      Computer Science (Cum Laude), 2010<br>
-      Team Leadership, RSM (2025)<br>
       Certified Scrum Master, Jeff Sutherland (2009)<br>
+      Computer Science (Cum Laude), 2010<br>
       Architecting on AWS (2019)<br>
       Professional Agile Architecture (2021)<br>
-      Leading the Change (2023)
+      Leading the Change (2023)<br>
+      Team Leadership, RSM (2025)
     </p>
 
     <h3>Skills</h3>
@@ -70,9 +70,9 @@ title: Resume
 
     <h3>Talks & Publications</h3>
     <ul>
-      <li><a href="https://www.youtube.com/watch?v=cbFZjLJe8VI">Rabobank TechTalk – Bart Leurs with Willem Dekker</a></li>
-      <li><a href="https://www.youtube.com/watch?v=pj5sdyx9QpI">DevCon 2019 – Death to DTAP or: Stop Worrying and Test in Production</a></li>
-      <li><a href="https://www.youtube.com/watch?v=IB57w8z7zgk">J-Fall 2016 – The Fallacies of Distributed Computing (with Bert Ertman)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=womqgkxRG5w">Rabobank TechTalk – Bart Leurs with Willem Dekker</a></li>
+      <li><a href="https://www.youtube.com/watch?v=XWDmgy7Kq_E">DevCon 2019 – Death to DTAP or: Stop Worrying and Test in Production</a></li>
+      <li><a href="https://www.youtube.com/watch?v=p5UVw-04j1I">J-Fall 2016 – The Fallacies of Distributed Computing (with Bert Ertman)</a></li>
     </ul>
   </div>
 </section>

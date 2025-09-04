@@ -28,7 +28,7 @@ title: Speaking & Talks
         covering Golden Paths, orchestration, and the human side of platform adoption.
       </p>
       <div class="talk-links">
-        <a href="https://www.youtube.com/watch?v=cbFZjLJe8VI" class="btn primary">Watch Video</a>
+        <a href="https://www.youtube.com/watch?v=womqgkxRG5w" class="btn primary">Watch Video</a>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@ title: Speaking & Talks
         <span class="topic">Production Testing</span>
       </div>
       <div class="talk-links">
-        <a href="https://www.youtube.com/watch?v=pj5sdyx9QpI" class="btn primary">Watch Video</a>
+        <a href="https://www.youtube.com/watch?v=XWDmgy7Kq_E" class="btn primary">Watch Video</a>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@ title: Speaking & Talks
         <span class="topic">System Design</span>
       </div>
       <div class="talk-links">
-        <a href="https://www.youtube.com/watch?v=IB57w8z7zgk" class="btn primary">Watch Video</a>
+        <a href="https://www.youtube.com/watch?v=p5UVw-04j1I" class="btn primary">Watch Video</a>
       </div>
     </div>
   </div>
