@@ -34,19 +34,12 @@
 <meta name="twitter:image" content="{{ site.url }}/assets/img/profile.jpg" />
 
 <!-- Structured Data -->
-{% include structured-data.html %} {%- if site.google_analytics and
-site.google_analytics != '' and site.google_analytics != 'UA-XXXXXXX-X' -%}
-<!-- Google tag (gtag.js) -->
+{% include structured-data.html %} {%- if site.goatcounter_site and
+site.goatcounter_site != '' -%}
+<!-- GoatCounter Analytics - Simple, privacy-focused, free analytics -->
 <script
+    data-goatcounter="https://{{ site.goatcounter_site }}.goatcounter.com/count"
     async
-    src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
+    src="//gc.zgo.at/count.js"
 ></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "{{ site.google_analytics }}");
-</script>
 {%- endif -%}

@@ -8,8 +8,9 @@ social:
   github: "wdekker"
   linkedin: "willem-dekker"
 
-# Google Analytics placeholder (replace with your actual GA4 ID)
-google_analytics: "G-XXXXXXXXXX"
+# GoatCounter Analytics (free, privacy-focused alternative to GA)
+# Sign up at https://goatcounter.com and replace with your site code
+goatcounter_site: "dekker-dev"
 
 markdown: kramdown
 kramdown:
